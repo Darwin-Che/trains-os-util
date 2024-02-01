@@ -1,5 +1,6 @@
 services:
   builder:
+    platform: linux/amd64
     build: .
     volumes:
       - ./trains-os:/app

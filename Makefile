@@ -4,4 +4,7 @@ build:
 clean:
 	docker compose run builder make clean
 
-.PHONY: build clean
+docker:
+	docker compose build
+
+.PHONY: build clean docker
